@@ -7,14 +7,14 @@ default: &default
 development:
     <<: *default
     database: stringNcup_development
-    username: ENV["POSTGRES_USER"]
-    password: ENV["POSTGRES_PASS"]
+    username: peter
+    password: 
 
 test:
     <<: *default
     database: stringNcup_test
-    username: ENV["POSTGRES_USER"]
-    password: ENV["POSTGRES_PASS"]
+    username: peter
+    password: 
 
 production:
     <<: *default
